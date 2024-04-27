@@ -38,7 +38,7 @@
     <section class="solutions">
             <div class="container">
                 <h1>EFFECTIVE SOLUTIONS FOR<br> YOUR BUSINESS</h1>
-                <button type="button">Request our service</button>
+                <button data-modal-open type="button">Request our service</button>
             </div>
     </section>
 
@@ -81,12 +81,28 @@
     <div class="container">
         <h2>What we do</h2>
         <div class="what_we_do_img">
-        <img src="./images/image-1.jpg" alt="pc-design" width="370" >
-        <img src="./images/image-2.jpg" alt="phone-design" width="370">
-        <img src="./images/image-3.jpg" alt="tablet-design" width="370">
+            <div class="image-container">
+                <div class="overlay">
+                    <p>DESKTOP APPS</p>
+                </div>
+                <img src="./images/image-1.jpg" alt="pc-design" width="370">
+            </div>
+            <div class="image-container">
+                <div class="overlay">
+                    <p>MOBILE APPS</p>
+                </div>
+                <img src="./images/image-2.jpg" alt="phone-design" width="370">
+            </div>
+            <div class="image-container">
+                <div class="overlay">
+                    <p>DESIGN SOLUTIONS</p>
+                </div>
+                <img src="./images/image-3.jpg" alt="tablet-design" width="370">
+            </div>
         </div>
     </div>
 </section>
+
 
  <!--our team section-->
         <section class="our_team">
@@ -176,7 +192,7 @@
                 </div>
             </div>
         </section>
-
+    </main>
 <!--footer section-->
 <footer class="footer">
     <div>
@@ -198,5 +214,13 @@
             <li><a href=""><svg class="f_icon"><use href="./images/sprite.svg#linkedin" /></svg></a></li>
         </ul>
     </div>
-</main>
+    </footer>
+<div data-modal class="is-hidden">
+    <div data-modal-content>
+        <h2>titlu</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt nobis facere dolorum, laborum laudantium architecto. Reiciendis, voluptatum? Voluptatibus deserunt sed ad iste libero provident commodi quasi possimus, esse necessitatibus numquam.</p>
+        <button data-modal-close type="button">X</button>
+    </div>
+</div>
+<script src="./modal.js"></script>
 </body>
