@@ -31,16 +31,17 @@ body{
 }
 
 /* header section */
-.header{
+.header {
 }
-.header .container{
+
+.header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom:1px solid var(--whitish);
+    border-bottom: 1px solid var(--whitish);
 }
 
-.header__logo a{
+.header__logo a {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -54,107 +55,108 @@ body{
     margin-left: 115px;
 }
 
-.header span{
-    color:var(--blue-color);
-}
-.header span:hover,
-.header span:focus{
-    color:var(--green-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4,0,0.2,1);
-}
-.header__logo p{
-    color: var(--black-color);
-}
-.header__logo p:hover,
-.header__logo p:focus{
-    color: var(--green-color);
+.header span {
+    color: var(--blue-color);
 }
 
-.header__navigation ul{
+.header span:hover,
+.header span:focus {
+    color: var(--aqua-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__logo p {
+    color: var(--black-color);
+}
+
+.header__logo p:hover,
+.header__logo p:focus {
+    color: var(--aqua-color);
+}
+
+.header__navigation ul {
     display: flex;
     align-items: flex-start;
     flex-direction: row;
     list-style: none;
     font-weight: 500;
-    gap:50px;
+    gap: 50px;
     padding-top: 32px;
     padding-bottom: 32px;
     margin-left: -150px;
 }
 
-.header__navigation a{
+.header__navigation a {
     text-decoration: none;
-    color:#212121;
+    color: #212121;
     position: relative;
-    transition-duration: 2s;
-    transition-property: width;
-}
-.header__navigation a:hover{
-    color:var(--aqua-color);
-}
-.header__navigation a::after{
-    content: '';
-    height: 4px;
-    width: 0%;
-    border-radius: 20px;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    background-color: var(--aqua-color);
-    color:var(--aqua-color);
     transition-duration: 250ms;
     transition-property: width;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
-.header__navigation a:active::after,
-.header__navigation a:hover::after{
-    /* /* content: '';
-    height: 4px; */
+.header__navigation a.active::after,
+.header__navigation a:hover::after {
+    content: '';
+    height: 4px;
     width: 100%;
-    /* border-radius: 20px;
+    border-radius: 20px;
     position: absolute;
-    top: 50px;
+    top:50px;
     left: 0;
     background-color: var(--aqua-color);
-    color:var(--aqua-color); */
-    
+    transition-duration: 250ms;
+    transition-property: width;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.header__navigation a:hover::after {
+    width: 100%;
+}
 
-.header_info{
+.header__navigation a::after {
+    content: '';
+    height: 4px;
+    width: 0;
+    border-radius: 20px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--aqua-color);
+}
+
+.header_info {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    gap:40px;
+    gap: 40px;
     padding-top: 32px;
     padding-bottom: 32px;
 }
 
-.header_info ul{
+.header_info ul {
     list-style: none;
     stroke: var(--gray-color);
 }
 
-.header__info1 svg{
+.header__info1 svg {
     width: 25px;
     height: 20px;
     padding-right: 10px;
     fill: var(--gray-color);
     margin-bottom: -5px;
 }
-.header__info2 svg{
+
+.header__info2 svg {
     width: 20px;
     height: 25px;
     padding-right: 10px;
-    margin-left:40px;
+    margin-left: 40px;
     margin-bottom: -5px;
-
 }
-.header__info1{
-    color:var(--gray-color);
+
+.header__info1 {
+    color: var(--gray-color);
     text-decoration: none;
     font-size: 14px;
     line-height: 1.14;
@@ -164,10 +166,11 @@ body{
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
-.header__info2{
-    color:var(--gray-color);
+
+.header__info2 {
+    color: var(--gray-color);
     text-decoration: none;
-    line-height:1.14;
+    line-height: 1.14;
     font-size: 14px;
     margin-right: 125px;
     fill: var(--dark-grey-color);
@@ -176,14 +179,16 @@ body{
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
+
 .header__info1:hover,
 .header__info1:focus,
 .header__info2:hover,
-.header__info2:focus{
+.header__info2:focus {
     color: var(--aqua-color);
     fill: var(--aqua-color);
     stroke: var(--aqua-color);
 }
+
 
 /* solutions section */
 .solutions {
